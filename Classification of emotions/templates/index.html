@@ -1,0 +1,25 @@
+<!DOCTYPE html>  
+<html lang="es">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Predicción de Emoción</title>  
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">   
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+</head>  
+<body>  
+    <div class="container">  
+        <h1>Predicción de Emoción</h1>  
+        <form id="emotionForm" enctype="multipart/form-data">  
+            <label for="input_text">Ingresa una oración:</label>  
+            <input type="text" id="input_text" name="input_text" placeholder="Escribe aqui..." autocomplete="off">  
+            <label for="input_file">O sube un archivo:</label>
+            <input type="file" id="input_file" name="input_file" accept=".txt,.csv,.xlsx" autocomplete="off"> 
+            <button type="submit">Predecir</button>  
+        </form>  
+        <div class="loader" id="loader"></div> <!-- Indicador de carga -->  
+        <h2 id="predictionResult"></h2>  
+    </div>  
+    <script src="{{ url_for('static', filename='script.js') }}"></script>  
+</body>  
+</html>

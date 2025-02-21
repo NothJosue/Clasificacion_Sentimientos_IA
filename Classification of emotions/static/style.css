@@ -1,0 +1,84 @@
+body {  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    background-color: #e9ecef;  
+    margin: 0;  
+    padding: 0;  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    height: 100vh;  
+}  
+
+.container {  
+    background-color: #ffffff;  
+    border-radius: 12px;  
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);  
+    padding: 30px;  
+    text-align: center;  
+    width: 350px;  
+}  
+
+h1 {  
+    color: #343a40;  
+    margin-bottom: 20px;  
+}  
+
+label {  
+    margin-bottom: 8px;  
+    display: block;  
+    color: #495057;  
+    font-weight: bold;  
+}  
+
+input[type="text"], input[type="file"] {  
+    width: 100%;  
+    padding: 12px;  
+    margin-bottom: 20px;  
+    border: 1px solid #ced4da;  
+    border-radius: 6px;  
+    box-sizing: border-box;  
+    transition: border-color 0.3s;  
+}  
+
+input[type="text"]:focus, input[type="file"]:focus {  
+    border-color: #80bdff;  
+    outline: none;  
+}  
+
+button {  
+    background-color: #007bff;  
+    color: white;  
+    border: none;  
+    padding: 12px 20px;  
+    border-radius: 6px;  
+    cursor: pointer;  
+    font-size: 16px;  
+    transition: background-color 0.3s;  
+}  
+
+button:hover {  
+    background-color: #0056b3;  
+}  
+
+h2 {  
+    margin-top: 20px;  
+    color: #343a40;  
+    font-weight: normal;  
+}  
+
+/* Estilo del indicador de carga */  
+.loader {  
+    display: none; /* Oculto por defecto */  
+    width: 30px;  
+    height: 30px;  
+    border: 4px solid #f3f3f3; /* Color de fondo */  
+    border-top: 4px solid #007bff; /* Color del borde animado */  
+    border-radius: 50%;  
+    animation: spin 1s linear infinite; /* Animación de rotación */  
+    margin: 10px auto; /* Centrado */  
+}  
+
+@keyframes spin {  
+    0% { transform: rotate(0deg); }  
+    100% { transform: rotate(360deg); }  
+}
